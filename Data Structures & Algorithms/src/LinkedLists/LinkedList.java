@@ -1,3 +1,4 @@
+package LinkedLists;
 /**
  * Simple linked list implementation
  * @author Osama
