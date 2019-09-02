@@ -49,7 +49,7 @@ public class LinkedList<T> {
 	
 	public static void main(String[] args) {
 		
-		//string arr test
+		//string array test
 		LinkedList<String> stringList = new LinkedList<String>();
 		String[] stringArr = {"Hello", "I", "am", "Osama"};
 		
