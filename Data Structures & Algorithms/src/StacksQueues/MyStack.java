@@ -1,4 +1,4 @@
-package StacksHeapsQueues;
+package StacksQueues;
 /**
  * Simple stack implementation
  * @author Osama

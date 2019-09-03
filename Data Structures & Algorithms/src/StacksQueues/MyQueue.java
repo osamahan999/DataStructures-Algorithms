@@ -1,4 +1,4 @@
-package StacksHeapsQueues;
+package StacksQueues;
 /**
  * First in, first out. Basically a linked list
  * @author Osama
