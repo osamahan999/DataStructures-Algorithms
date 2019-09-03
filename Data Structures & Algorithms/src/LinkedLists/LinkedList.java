@@ -46,7 +46,21 @@ public class LinkedList<T> {
 		}
 	}
 	
-	
+	/**
+	 * O(n) search
+	 * @param data
+	 * @return
+	 */
+	public boolean search(T data) {
+		Node n = head;
+		
+		while (n != null) {
+			if (n.data == data) return true;
+			n = n.next;
+		}
+		
+		return false;
+	}
 	
 	public static void main(String[] args) {
 		
@@ -59,6 +73,12 @@ public class LinkedList<T> {
 		}
 		stringList.printList();
 		
+		if (stringList.search("Hello")) System.out.println("'Hello' is found"); 
+		else System.out.println("'Hello' is not found");
+
+		if (stringList.search("Osma")) System.out.println("'Osma' is found"); 
+		else System.out.println("'Osma' is not found");
+		
 		
 		//int arr test
 		LinkedList<Integer> intList = new LinkedList<Integer>();
@@ -69,5 +89,8 @@ public class LinkedList<T> {
 		}
 		
 		intList.printList();
+
+		if (intList.search(5)) System.out.println("5 is found"); 
+		else System.out.println("5 is not found");
 	}
 }

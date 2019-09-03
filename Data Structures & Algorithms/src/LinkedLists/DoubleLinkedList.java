@@ -72,6 +72,21 @@ public class DoubleLinkedList<T> {
 		}
 	}
 	
+	/**
+	 * O(n) search
+	 * @param data
+	 * @return
+	 */
+	public boolean search(T data) {
+		Node n = head;
+		while (n != null) {
+			if (n.data == data) return true;
+			n = n.next;
+		}
+		
+		return false;
+	}
+	
 	
 	public static void main(String[] args) {
 		DoubleLinkedList<String> stringList = new DoubleLinkedList<String>();
@@ -83,5 +98,9 @@ public class DoubleLinkedList<T> {
 		
 		stringList.printList();
 		stringList.printListBackwards();
+		
+
+		if (stringList.search("This")) System.out.println("'This' is found"); 
+		else System.out.println("'This' is not found");
 	}
 }
